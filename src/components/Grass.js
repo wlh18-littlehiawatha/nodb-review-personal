@@ -4,14 +4,22 @@ class Grass extends Component {
   constructor() {
     super()
     this.state = {
-      grassClicked: false
+      grassClicked: false,
     }
   }
 
-  checkGrass(){}
+  checkGrass() {}
 
-  render(){
-    return <div>Grass.js</div>
+  render() {
+    return (
+      <div>
+        {this.props.pokemon.name}
+        <img
+          alt={this.props.pokemon.name}
+          src={this.props.pokemon.sprites.front_default}
+        />
+      </div>
+    )
   }
 }
 

@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        App.js
+        
         <Header />
         <Finder catchPokemon={this.catchPokemon} />
         <Pokedex
